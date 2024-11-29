@@ -1,0 +1,25 @@
+// Code your testbench here
+// or browse Examples
+module top;
+  
+  integer num;
+  initial
+    begin
+      num=0;
+      
+      $display("%h",num);
+      
+      num[7]=1'bx;
+      $display("%0h",num);
+      $display("%h",num);
+      $display("%d",num);
+      $display("%0d",num);
+    end
+  
+endmodule
+-------------------------------------------------------------------------------------
+# KERNEL: 00000000
+# KERNEL: X0
+# KERNEL: 000000X0
+# KERNEL:           X
+# KERNEL: X
